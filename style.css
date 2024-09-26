@@ -85,8 +85,7 @@ header p {
   width: 840px;
 }
 
-header,
-footer {
+header {
   background-color: whitesmoke;
 }
 
@@ -96,7 +95,7 @@ form {
 }
 
 .form-container {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .form-container p {
