@@ -1,3 +1,8 @@
+:root {
+  --highlight-color: #596d48;
+  --my-light-grey: #e5e7eb;
+}
+
 @font-face {
   font-family: 'norsebold';
   src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
@@ -64,4 +69,96 @@ body {
 main {
   flex: 2;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-section {
+  flex: 1;
+  padding-left: 90px;
+}
+
+header p {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: 100px;
+  width: 840px;
+}
+
+header,
+footer {
+  background-color: whitesmoke;
+}
+
+form {
+  display: flex;
+  gap: 50px;
+}
+
+.form-container {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0);
+}
+
+.form-container p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.inputs-left,
+.inputs-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-left label,
+.inputs-right label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(95, 95, 95);
+  letter-spacing: 0.1rem;
+}
+
+.inputs-left input,
+.inputs-right input {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  height: 30px;
+  width: 300px;
+  border: solid 1px var(--my-light-grey);
+}
+
+.inputs-left input:invalid,
+.inputs-right input:invalid {
+  border-color: red;
+}
+
+.inputs-left input:focus,
+.inputs-right input:focus {
+  outline: none !important;
+  border-color: rgb(56, 99, 238);
+  box-shadow: 1px 1px 2px rgba(0, 0, 255, 0.4);
+}
+
+footer button {
+  background-color: var(--highlight-color);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border-radius: 7px;
+  border: none;
+  margin-top: 40px;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+footer p a {
+  color: var(--highlight-color);
+  font-weight: bold;
 }
